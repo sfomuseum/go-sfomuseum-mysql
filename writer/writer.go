@@ -45,12 +45,12 @@ func NewMySQLWriter(ctx context.Context, uri string) (wof_writer.Writer, error) 
 		return nil, fmt.Errorf("Failed to create database, %w", err)
 	}
 
-	index_objects := true
-	index_images := true
-
 	to_index := make([]wof_sql.Table, 0)
 
-	if index_objects {
+	target := u.Host
+
+	switch target {
+	case "objects":
 
 		t, err := tables.NewObjectsTableWithDatabase(ctx, db)
 
@@ -59,9 +59,8 @@ func NewMySQLWriter(ctx context.Context, uri string) (wof_writer.Writer, error) 
 		}
 
 		to_index = append(to_index, t)
-	}
 
-	if index_images {
+	case "images":
 
 		t, err := tables.NewObjectsImagesTableWithDatabase(ctx, db)
 
