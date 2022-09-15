@@ -17,7 +17,7 @@ import (
 
 func init() {
 	ctx := context.Background()
-	wof_writer.RegisterWriter(ctx, "mysql_sfom", NewMySQLWriter)
+	wof_writer.RegisterWriter(ctx, "sfom.mysql", NewMySQLWriter)
 }
 
 type MySQLWriter struct {
@@ -39,7 +39,7 @@ func NewMySQLWriter(ctx context.Context, uri string) (wof_writer.Writer, error) 
 
 	dsn := q.Get("dsn")
 	enc_dsn := url.QueryEscape(dsn)
-	
+
 	db_uri := fmt.Sprintf("mysql://?dsn=%s", enc_dsn)
 
 	db, err := wof_sql.NewSQLDB(ctx, db_uri)
