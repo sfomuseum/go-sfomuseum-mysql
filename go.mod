@@ -7,7 +7,7 @@ require (
 	github.com/tidwall/gjson v1.14.3
 	github.com/whosonfirst/go-whosonfirst-database-sql v0.0.1
 	github.com/whosonfirst/go-whosonfirst-feature v0.0.24
-	github.com/whosonfirst/go-writer/v2 v2.0.0
+	github.com/whosonfirst/go-writer/v3 v3.0.0
 )
 
 require (
