@@ -72,6 +72,17 @@ func NewMySQLWriter(ctx context.Context, uri string) (wof_writer.Writer, error) 
 		}
 
 		to_index = append(to_index, t)
+
+	case "pointinpolygon":
+
+		t, err := tables.NewPointInPolygonTableWithDatabase(ctx, db)
+
+		if err != nil {
+			return nil, fmt.Errorf("Failed to create pointinpolygon table, %w", err)
+		}
+
+		to_index = append(to_index, t)
+
 	}
 
 	logger := log.New(io.Discard, "", 0)
