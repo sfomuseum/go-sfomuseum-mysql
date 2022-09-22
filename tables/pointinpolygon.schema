@@ -1,0 +1,5 @@
+CREATE TABLE IF NOT EXISTS geometry (
+      id BIGINT UNSIGNED PRIMARY KEY,
+      geometry GEOMETRY NOT NULL,
+      SPATIAL KEY idx_geometry (geometry),
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
