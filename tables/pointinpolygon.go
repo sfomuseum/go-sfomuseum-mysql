@@ -1,5 +1,9 @@
 package tables
 
+// Note the trailing '?maxAllowedPacket=0' on the DSN. That is important any necessary (often
+// in conjunction with tweaks to the my.cnf file) to index large records.
+// go run cmd/sfom-index-mysql/main.go -writer-uri 'constant://?val=sfom.mysql://pointinpolygon?dsn=foo:bar@/sfomuseum?maxAllowedPacket=0' /usr/local/data/sfomuseum-data-whosonfirst/
+
 import (
 	"context"
 	"database/sql"
