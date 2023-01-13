@@ -10,7 +10,7 @@ func TestWriter(t *testing.T) {
 
 	ctx := context.Background()
 
-	wr_uri := "sfom.mysql://images?dsn=user:pass@example.com/sfomuseum_collection"
+	wr_uri := "sfom.mysql://images?dsn=user:pass@tcp(example.com)/sfomuseum_collection"
 
 	_, err := wof_writer.NewWriter(ctx, wr_uri)
 
