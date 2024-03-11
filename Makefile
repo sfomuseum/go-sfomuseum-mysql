@@ -1,2 +1,5 @@
+GOMOD=$(shell test -f "go.work" && echo "readonly" || echo "vendor")
+LDFLAGS=-s -w
+
 cli:
-	go build -mod vendor -ldflags="-s -w" -o bin/sfom-mysql-index cmd/sfom-mysql-index/main.go
+	go build -mod $(GOMOD) -ldflags="$(LDFLAGS)" -o bin/sfom-mysql-index cmd/sfom-mysql-index/main.go

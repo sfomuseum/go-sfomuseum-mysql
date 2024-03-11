@@ -2,8 +2,9 @@ package writer
 
 import (
 	"context"
-	wof_writer "github.com/whosonfirst/go-writer/v3"
 	"testing"
+
+	wof_writer "github.com/whosonfirst/go-writer/v3"	
 )
 
 func TestWriter(t *testing.T) {

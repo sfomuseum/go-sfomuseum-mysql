@@ -7,12 +7,13 @@ import (
 import (
 	"context"
 	"fmt"
-	"github.com/sfomuseum/go-sfomuseum-mysql/tables"
-	wof_sql "github.com/whosonfirst/go-whosonfirst-database-sql"
-	wof_writer "github.com/whosonfirst/go-writer/v3"
 	"io"
 	"log"
 	"net/url"
+
+	"github.com/sfomuseum/go-sfomuseum-mysql/tables"
+	wof_sql "github.com/whosonfirst/go-whosonfirst-database-sql"
+	wof_writer "github.com/whosonfirst/go-writer/v3"	
 )
 
 func init() {
