@@ -372,8 +372,8 @@ github.com/whosonfirst/go-ioutil
 # github.com/whosonfirst/go-whosonfirst-crawl v0.2.2
 ## explicit; go 1.18
 github.com/whosonfirst/go-whosonfirst-crawl
-# github.com/whosonfirst/go-whosonfirst-database-sql v0.0.2
-## explicit; go 1.19
+# github.com/whosonfirst/go-whosonfirst-database-sql v0.0.3
+## explicit; go 1.22
 github.com/whosonfirst/go-whosonfirst-database-sql
 # github.com/whosonfirst/go-whosonfirst-feature v0.0.27
 ## explicit; go 1.18

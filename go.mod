@@ -5,7 +5,7 @@ go 1.22
 require (
 	github.com/go-sql-driver/mysql v1.8.0
 	github.com/tidwall/gjson v1.17.1
-	github.com/whosonfirst/go-whosonfirst-database-sql v0.0.2
+	github.com/whosonfirst/go-whosonfirst-database-sql v0.0.3
 	github.com/whosonfirst/go-whosonfirst-feature v0.0.27
 	github.com/whosonfirst/go-whosonfirst-iterate-git/v2 v2.1.4
 	github.com/whosonfirst/go-whosonfirst-iterwriter v0.0.17
