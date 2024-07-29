@@ -229,8 +229,8 @@ github.com/whosonfirst/go-whosonfirst-iterate-git/v2 v2.1.6 h1:Ylu7pX/0o16GtLyGn
 github.com/whosonfirst/go-whosonfirst-iterate-git/v2 v2.1.6/go.mod h1:beJyJyHZBxbNFhVSeHKdUf/J6phnkmm00NZEJBtfdko=
 github.com/whosonfirst/go-whosonfirst-iterate/v2 v2.4.1 h1:GKm+MmZ878vFr8K/Bk9RLXKPt+va9TUqP3/JCnmynVI=
 github.com/whosonfirst/go-whosonfirst-iterate/v2 v2.4.1/go.mod h1:kDIvHxJTo6XgFKmLHliGLxlqeeHhxuYtdeVZBAcP68g=
-github.com/whosonfirst/go-whosonfirst-iterwriter v0.1.4 h1:djiF8dcJSNXsIxEzNdQqTP/MGE/bsJ6pNttYM0qmQwo=
-github.com/whosonfirst/go-whosonfirst-iterwriter v0.1.4/go.mod h1:BJjlrhBWEqZm4lwBuXDhVEpBlZpDvcoLCRonmIt6q0c=
+github.com/whosonfirst/go-whosonfirst-iterwriter v0.2.0 h1:sDhC1Z/hT3BmN46vdYHWQ1vPU7hL26HD33LDSPGRqPk=
+github.com/whosonfirst/go-whosonfirst-iterwriter v0.2.0/go.mod h1:GptcLpe9HZflSoz4d1BAs2zgihf6c/Ptygil8DmZQf0=
 github.com/whosonfirst/go-whosonfirst-sources v0.1.0 h1:JuKLa6KWke22jBfJ1pM9WQHoz1/3pbDv2C+aR+THPPQ=
 github.com/whosonfirst/go-whosonfirst-sources v0.1.0/go.mod h1:EUMHyGzUmqPPxlMmOp+28BFeoBdxxE0HCKRd67lkqGM=
 github.com/whosonfirst/go-whosonfirst-uri v1.3.0 h1:LYOVLqP9rWQxauYVkdw65j5LZxEi8OK0GHh/qCEpX4g=
@@ -391,8 +391,8 @@ google.golang.org/protobuf v1.25.0/go.mod h1:9JNX74DMeImyA3h4bdi1ymwjUzf21/xIlba
 google.golang.org/protobuf v1.26.0-rc.1/go.mod h1:jlhhOSvTdKEhbULTjvd4ARK9grFBp09yW+WbY/TyQbw=
 google.golang.org/protobuf v1.26.0/go.mod h1:9q0QmTI4eRPtz6boOQmLYwt+qCgq0jsYwAQnmE0givc=
 google.golang.org/protobuf v1.27.1/go.mod h1:9q0QmTI4eRPtz6boOQmLYwt+qCgq0jsYwAQnmE0givc=
-google.golang.org/protobuf v1.31.0 h1:g0LDEJHgrBl9N9r17Ru3sqWhkIx2NB67okBHPwC7hs8=
-google.golang.org/protobuf v1.31.0/go.mod h1:HV8QOd/L58Z+nl8r43ehVNZIU/HEI6OcFqwMG9pJV4I=
+google.golang.org/protobuf v1.33.0 h1:uNO2rsAINq/JlFpSdYEKIZ0uKD/R9cpdv0T+yoGwGmI=
+google.golang.org/protobuf v1.33.0/go.mod h1:c6P6GXX6sHbq/GpV6MGZEdwhWPcYBgnhAHhKbcUYpos=
 gopkg.in/check.v1 v0.0.0-20161208181325-20d25e280405/go.mod h1:Co6ibVJAznAaIkqp8huTwlJQCZ016jof/cbN4VW5Yz0=
 gopkg.in/check.v1 v1.0.0-20180628173108-788fd7840127/go.mod h1:Co6ibVJAznAaIkqp8huTwlJQCZ016jof/cbN4VW5Yz0=
 gopkg.in/check.v1 v1.0.0-20190902080502-41f04d3bba15/go.mod h1:Co6ibVJAznAaIkqp8huTwlJQCZ016jof/cbN4VW5Yz0=

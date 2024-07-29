@@ -1,8 +1,6 @@
 module github.com/sfomuseum/go-sfomuseum-mysql
 
-go 1.22.1
-
-toolchain go1.22.5
+go 1.22.5
 
 require (
 	github.com/go-sql-driver/mysql v1.8.1
@@ -10,7 +8,7 @@ require (
 	github.com/whosonfirst/go-whosonfirst-database-sql v0.0.3
 	github.com/whosonfirst/go-whosonfirst-feature v0.0.27
 	github.com/whosonfirst/go-whosonfirst-iterate-git/v2 v2.1.6
-	github.com/whosonfirst/go-whosonfirst-iterwriter v0.1.4
+	github.com/whosonfirst/go-whosonfirst-iterwriter v0.2.0
 	github.com/whosonfirst/go-writer/v3 v3.1.1
 )
 
@@ -87,6 +85,6 @@ require (
 	google.golang.org/api v0.151.0 // indirect
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20231120223509-83a465c0220f // indirect
 	google.golang.org/grpc v1.59.0 // indirect
-	google.golang.org/protobuf v1.31.0 // indirect
+	google.golang.org/protobuf v1.33.0 // indirect
 	gopkg.in/warnings.v0 v0.1.2 // indirect
 )
