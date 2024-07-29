@@ -12,19 +12,20 @@ import (
 import (
 	"context"
 	"log"
+	"log/slog"
 
-	"github.com/whosonfirst/go-whosonfirst-iterwriter/application/iterwriter"	
+	"github.com/whosonfirst/go-whosonfirst-iterwriter/app/iterwriter"
 )
 
 func main() {
 
 	ctx := context.Background()
-	logger := log.Default()
+	logger := slog.Default()
 
 	err := iterwriter.Run(ctx, logger)
 
 	if err != nil {
-		logger.Fatalf("Failed to iterate, %v", err)
+		log.Fatalf("Failed to iterate, %v", err)
 	}
 
 }

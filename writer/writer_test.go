@@ -4,7 +4,7 @@ import (
 	"context"
 	"testing"
 
-	wof_writer "github.com/whosonfirst/go-writer/v3"	
+	wof_writer "github.com/whosonfirst/go-writer/v3"
 )
 
 func TestWriter(t *testing.T) {

@@ -13,7 +13,7 @@ import (
 
 	"github.com/sfomuseum/go-sfomuseum-mysql/tables"
 	wof_sql "github.com/whosonfirst/go-whosonfirst-database-sql"
-	wof_writer "github.com/whosonfirst/go-writer/v3"	
+	wof_writer "github.com/whosonfirst/go-writer/v3"
 )
 
 func init() {
