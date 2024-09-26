@@ -1,16 +1,14 @@
 package writer
 
 import (
-	_ "github.com/go-sql-driver/mysql"
-)
-
-import (
 	"context"
 	"fmt"
 	"io"
-	"log"
+	"log/slog"
 	"net/url"
 
+	_ "github.com/go-sql-driver/mysql"
+	
 	"github.com/sfomuseum/go-sfomuseum-mysql/tables"
 	wof_sql "github.com/whosonfirst/go-whosonfirst-database-sql"
 	wof_writer "github.com/whosonfirst/go-writer/v3"
@@ -25,7 +23,6 @@ type MySQLWriter struct {
 	wof_writer.Writer
 	db     wof_sql.Database
 	tables []wof_sql.Table
-	logger *log.Logger
 }
 
 func NewMySQLWriter(ctx context.Context, uri string) (wof_writer.Writer, error) {
@@ -75,12 +72,9 @@ func NewMySQLWriter(ctx context.Context, uri string) (wof_writer.Writer, error) 
 		to_index = append(to_index, t)
 	}
 
-	logger := log.New(io.Discard, "", 0)
-
 	wr := &MySQLWriter{
 		db:     db,
 		tables: to_index,
-		logger: logger,
 	}
 
 	return wr, nil
@@ -88,6 +82,7 @@ func NewMySQLWriter(ctx context.Context, uri string) (wof_writer.Writer, error) 
 
 func (wr *MySQLWriter) Write(ctx context.Context, path string, r io.ReadSeeker) (int64, error) {
 
+	slog.Debug("Write to MySQL", "path", path)
 	body, err := io.ReadAll(r)
 
 	if err != nil {
@@ -112,10 +107,5 @@ func (wr *MySQLWriter) Flush(ctx context.Context) error {
 }
 
 func (wr *MySQLWriter) Close(ctx context.Context) error {
-	return nil
-}
-
-func (wr *MySQLWriter) SetLogger(ctx context.Context, logger *log.Logger) error {
-	wr.logger = logger
 	return nil
 }
