@@ -1,19 +1,14 @@
 package main
 
 import (
-	_ "github.com/sfomuseum/go-sfomuseum-mysql/writer"
-)
-
-import (
-	_ "github.com/go-sql-driver/mysql"
-	_ "github.com/whosonfirst/go-whosonfirst-iterate-git/v2"
-)
-
-import (
 	"context"
 	"log"
 	"log/slog"
 
+	_ "github.com/go-sql-driver/mysql"
+	_ "github.com/whosonfirst/go-whosonfirst-iterate-git/v2"
+	_ "github.com/sfomuseum/go-sfomuseum-mysql/writer"	
+	
 	"github.com/whosonfirst/go-whosonfirst-iterwriter/app/iterwriter"
 )
 

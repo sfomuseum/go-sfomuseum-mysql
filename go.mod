@@ -8,7 +8,7 @@ require (
 	github.com/whosonfirst/go-whosonfirst-database-sql v0.0.3
 	github.com/whosonfirst/go-whosonfirst-feature v0.0.28
 	github.com/whosonfirst/go-whosonfirst-iterate-git/v2 v2.1.7
-	github.com/whosonfirst/go-whosonfirst-iterwriter v0.2.1
+	github.com/whosonfirst/go-whosonfirst-iterwriter v0.2.2
 	github.com/whosonfirst/go-writer/v3 v3.1.1
 )
 
