@@ -4,6 +4,7 @@ import (
 	"context"
 	"fmt"
 	"io"
+	"log"
 	"log/slog"
 	"net/url"
 
@@ -108,4 +109,9 @@ func (wr *MySQLWriter) Flush(ctx context.Context) error {
 
 func (wr *MySQLWriter) Close(ctx context.Context) error {
 	return nil
+}
+
+func (wr *MySQLWriter) SetLogger(ctx context.Context, l *log.Logger) error {
+	slog.Warn("MySQLWriter no longer supports SetLogger. Please use log/slog methods instead.")
+        return nil
 }
